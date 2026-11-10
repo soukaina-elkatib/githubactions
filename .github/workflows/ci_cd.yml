@@ -53,11 +53,12 @@ jobs:
 
   # ---------------------------------------------------------
   # JOB 2 : Build Docker
+
   # ---------------------------------------------------------
   build:
     # Ce job attend la réussite du job test
     needs: test
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       # 1. Récupérer le code
